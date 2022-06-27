@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+section{
+	max-width: 1280px;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+.range{
+	// max-width: 1000px;
+	width: 100%;
+	height: 5px;
+	background-color: lightcoral;
+	position: relative;
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.min{
+	width: 20px;
+	height: 20px;
+	// border-right: 20px solid lime;
+	background-color: lime;
+	cursor: pointer;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	// transform: translateX(-20px);
+	position: relative;
+	// left: -10px;
+	z-index: 2;
+}
+.max{
+	width: 20px;
+	height: 20px;
+	// border-left: 20px solid navy;
+	background-color: navy;
+	cursor: pointer;
+	position: relative;
+	// right: -10px;
+	z-index: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input{
+	outline: 0;
+}
